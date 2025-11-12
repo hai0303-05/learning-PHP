@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+</head>
+
+<body>
+
+    <h1>Quản Lý Nhân Viên</h1>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Họ và tên</th>
+                <th>Điểm</th>
+                <th>Xếp loại</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td colspan="4" align="center"><b>Khóa A</b></td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Trần Tiến Tài</td>
+                <td>7</td>
+                <td>Khá</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Phạm Mạnh Khoa</td>
+                <td>8</td>
+                <td>Khá</td>
+            </tr>
+
+            <tr>
+                <td colspan="4" align="center"><b>Khóa B</b></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Trần Văn Hưng</td>
+                <td>5</td>
+                <td>Trung bình</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Đỗ Đức Thành</td>
+                <td>10</td>
+                <td>Giỏi</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center"><b>TỔNG CỘNG</b></td>
+                <td align="center"><b>7.5</b></td>
+                <td align="center"><b>Khá</b></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Đăng ký tài khoản!</h2>
+
+    <form action="#" method="post">
+        <p>Nhập và lựa chọn các thông tin đăng ký:</p>
+
+        <input type="text" name="ten" placeholder="Tên">
+        <input type="text" name="hodem" placeholder="Họ đệm"><br><br>
+
+        <input type="email" name="email" placeholder="Địa chỉ Email">
+        <input type="tel" name="sdt" placeholder="Số điện thoại"><br><br>
+
+        <select name="thanhpho">
+            <option>Chọn thành phố</option>
+            <option>Hà Nội</option>
+            <option>TP. Hồ Chí Minh</option>
+        </select>
+
+        <select name="tinh">
+            <option>Chọn tỉnh</option>
+            <option>Bình Dương</option>
+            <option>Nghệ An</option>
+        </select><br><br>
+
+        <textarea name="ghichu" rows="5" cols="60" placeholder="Ghi chú"></textarea><br><br>
+
+        <input type="submit" value="Đăng ký">
+    </form>
+
+</body>
+
+</html>
