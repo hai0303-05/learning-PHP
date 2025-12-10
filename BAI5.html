@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Quản Lý Nhân Viên</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            font-family: Arial;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background: #ddd;
+        }
+
+        /* FORM */
+        form {
+            width: 600px;
+            padding: 15px;
+            border: 1px solid #000;
+            font-family: Arial;
+        }
+
+        /* Hàng gồm 2 ô */
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;            /* khoảng cách giữa 2 ô */
+            margin-bottom: 15px;  /* khoảng cách giữa các hàng */
+        }
+
+        .row input,
+        .row select {
+            width: 48%;
+            padding: 6px;
+            border: 1px solid #555;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid #555;
+            margin-top: 5px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            background: #ccc;
+            border: 1px solid #555;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="titleQLNV">Quản Lý Sinh Viên</h1>
+
+    <!-- BẢNG QUẢN LÝ NHÂN VIÊN -->
+    <table id="tableNhanVien">
+        <thead id="theadNhanVien">
+            <tr id="rowHeader">
+                <th id="colID">ID</th>
+                <th id="colHoten">Họ và tên</th>
+                <th id="colDiem">Điểm</th>
+                <th id="colXeploai">Xếp loại</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbodyNhanVien">
+
+            <tr id="rowKhoaA">
+                <td id="khoaA" colspan="4" align="center"><b>Khóa A</b></td>
+            </tr>
+
+            <tr id="rowSV1">
+                <td id="id1">1</td>
+                <td id="ten1">Trần Tiến Tài</td>
+                <td id="diem1">7</td>
+                <td id="xeploai1">Khá</td>
+            </tr>
+
+            <tr id="rowSV2">
+                <td id="id2">2</td>
+                <td id="ten2">Phạm Mạnh Khoa</td>
+                <td id="diem2">8</td>
+                <td id="xeploai2">Khá</td>
+            </tr>
+
+            <tr id="rowKhoaB">
+                <td id="khoaB" colspan="4" align="center"><b>Khóa B</b></td>
+            </tr>
+
+            <tr id="rowSV3">
+                <td id="id3">3</td>
+                <td id="ten3">Trần Văn Hưng</td>
+                <td id="diem3">5</td>
+                <td id="xeploai3">Trung bình</td>
+            </tr>
+
+            <tr id="rowSV4">
+                <td id="id4">4</td>
+                <td id="ten4">Đỗ Đức Thành</td>
+                <td id="diem4">10</td>
+                <td id="xeploai4">Giỏi</td>
+            </tr>
+
+            <tr id="rowTong">
+                <td id="tongLabel" colspan="2" align="center"><b>TỔNG CỘNG</b></td>
+                <td id="tongDiem" align="center"><b>7.5</b></td>
+                <td id="tongXeploai" align="center"><b>Khá</b></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <!-- FORM ĐĂNG KÝ -->
+    <h2 id="titleDangKy">Đăng ký tài khoản!</h2>
+
+    <form id="formDangKy" action="#" method="post">
+
+        <p id="moTaForm">Nhập và lựa chọn các thông tin đăng ký:</p>
+
+        <!-- Họ tên -->
+        <div class="row" id="rowTen">
+            <input id="inputTen" type="text" name="ten" placeholder="Tên">
+            <input id="inputHodem" type="text" name="hodem" placeholder="Họ đệm">
+        </div>
+
+        <!-- Email + SĐT -->
+        <div class="row" id="rowEmailSdt">
+            <input id="inputEmail" type="email" name="email" placeholder="Địa chỉ Email">
+            <input id="inputSdt" type="tel" name="sdt" placeholder="Số điện thoại">
+        </div>
+
+        <!-- Thành phố + Tỉnh -->
+        <div class="row" id="rowTpTinh">
+            <select id="selectThanhPho" name="thanhpho">
+                <option>Chọn thành phố</option>
+                <option>Hà Nội</option>
+                <option>TP. Hồ Chí Minh</option>
+            </select>
+
+            <select id="selectTinh" name="tinh">
+                <option>Chọn tỉnh</option>
+                <option>Bình Dương</option>
+                <option>Nghệ An</option>
+            </select>
+        </div>
+
+        <!-- Ghi chú -->
+        <textarea id="inputGhichu" name="ghichu" rows="5" placeholder="Ghi chú"></textarea>
+
+        <!-- Submit -->
+        <input id="btnDangKy" type="button" value="Đăng ký">
+    </form>
+
+     <script src="BAI5.js"></script>
+
+</body>
+
+
+</html>
