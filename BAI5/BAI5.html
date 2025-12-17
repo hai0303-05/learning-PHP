@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản Lý Sinh Viên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>QUẢN LÝ SINH VIÊN</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Họ và tên</th>
+        <th>Điểm</th>
+        <th>Xếp loại</th>
+    </tr>
+
+    <tr class="group">
+        <td colspan="4">Khóa A</td>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>Trần Tiến Tài</td>
+        <td>7</td>
+        <td>Khá</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Phạm Mạnh Khoa</td>
+        <td>8</td>
+        <td>Khá</td>
+    </tr>
+
+    <tr class="group">
+        <td colspan="4">Khóa B</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Trần Văn Hưng</td>
+        <td>5</td>
+        <td>Trung bình</td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>Đỗ Đức Thành</td>
+        <td>10</td>
+        <td>Giỏi</td>
+    </tr>
+
+    <tr class="total">
+        <td colspan="2">TỔNG CỘNG</td>
+        <td>7.5</td>
+        <td>Khá</td>
+    </tr>
+</table>
+
+<h2>Đăng ký tài khoản!</h2>
+
+<form>
+
+    <p>Nhập và lựa chọn các thông tin đăng ký:</p>
+
+    <div class="row">
+        <input id="inputTen" type="text" placeholder="Tên">
+        <input id="inputHodem" type="text" placeholder="Họ đệm">
+    </div>
+
+    <div class="row">
+        <input id="inputEmail" type="email" placeholder="Địa chỉ Email">
+        <input id="inputSdt" type="tel" placeholder="Số điện thoại">
+    </div>
+
+    <div class="row">
+        <select id="selectThanhPho">
+            <option>Chọn thành phố</option>
+            <option>Hà Nội</option>
+            <option>TP. Hồ Chí Minh</option>
+        </select>
+
+        <select id="selectTinh">
+            <option>Chọn tỉnh</option>
+            <option>Bình Dương</option>
+            <option>Nghệ An</option>
+        </select>
+    </div>
+
+    <textarea id="inputGhichu" placeholder="Ghi chú"></textarea>
+
+    <input id="btnDangKy" type="button" value="Đăng ký">
+
+</form>
+
+<script src="BAI5.js"></script>
+</body>
+</html>

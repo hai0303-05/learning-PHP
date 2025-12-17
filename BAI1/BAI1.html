@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản Lý Sinh Viên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Quản Lý Sinh Viên</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Họ và tên</th>
+        <th>Điểm</th>
+        <th>Xếp loại</th>
+    </tr>
+
+    <tr>
+        <td colspan="4" class="khoa">Khóa A</td>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>Trần Tiến Tài</td>
+        <td>7</td>
+        <td>Khá</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Phạm Mạnh Khoa</td>
+        <td>8</td>
+        <td>Khá</td>
+    </tr>
+
+    <tr>
+        <td colspan="4" class="khoa">Khóa B</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Trần Văn Hưng</td>
+        <td>5</td>
+        <td>Trung bình</td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>Đỗ Đức Thành</td>
+        <td>10</td>
+        <td>Giỏi</td>
+    </tr>
+
+    <tr class="tong">
+        <td colspan="2">TỔNG CỘNG</td>
+        <td>7.5</td>
+        <td>Khá</td>
+    </tr>
+</table>
+
+<h2>Đăng ký tài khoản!</h2>
+<p>Nhập và lựa chọn các thông tin đăng ký:</p>
+
+<form>
+    <div class="row">
+        <input type="text" placeholder="Tên">
+        <input type="text" placeholder="Họ đệm">
+    </div>
+
+    <div class="row">
+        <input type="email" placeholder="Địa chỉ Email">
+        <input type="text" placeholder="Số điện thoại">
+    </div>
+
+    <div class="row">
+        <select>
+            <option>Chọn thành phố</option>
+            <option>Hà Nội</option>
+            <option>TP. Hồ Chí Minh</option>
+        </select>
+
+        <select>
+            <option>Chọn tỉnh</option>
+            <option>Bình Dương</option>
+            <option>Nghệ An</option>
+        </select>
+    </div>
+
+    <textarea placeholder="Ghi chú"></textarea>
+
+    <input type="submit" value="Đăng ký">
+</form>
+
+</body>
+</html>
