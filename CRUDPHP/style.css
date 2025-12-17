@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    margin: 30px;
+}
+
+h2 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    background: #fff;
+}
+
+table th, table td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background: #eaeaea;
+}
+
+form {
+    background: #fff;
+    padding: 15px;
+    width: 350px;
+    border: 1px solid #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 6px 12px;
+    cursor: pointer;
+}
